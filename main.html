@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Journal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<body>
+    <header>
+        My Journal
+    </header>
+
+    <a href="https://github.com/mayanksardiya" class="github-button">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mayank_sardiya" class="instagram-button">
+        <i class="fab fa-instagram"></i>
+    </a>
+      
+    <section>
+        <h2>Search Entries</h2>
+        <input type="text" id="search-input" placeholder="Search entries by date or text..." />
+        <button id="search-button">Search</button>
+        <p class="empty-state" id="no-search-results" hidden>No entries found.</p>
+    </section>
+
+    <section>
+        <h2>New Journal Entry</h2>
+        <textarea id="entry-text" rows="4" placeholder="Write something..."></textarea>
+        <div class="file-upload-container">
+            <label for="entry-image" class="file-label">
+                <i class="fa fa-upload"></i> Choose File
+            </label>
+            <input type="file" id="entry-image" accept="image/*" hidden />
+
+            <button id="add-entry">Upload Entry</button>
+        </div>
+        <p id="upload-status" style="color: rgb(0, 0, 0); font-weight: bold; display: none;"></p>
+    </section>
+
+    <section id="entries">
+        <h2>Your Entries</h2>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
